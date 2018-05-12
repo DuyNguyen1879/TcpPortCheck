@@ -3,7 +3,7 @@
 ### April 2018
 ### $1 is the IP address
 ### $2 is the TCP Port
-### - Cheap and nasty, so data validation checking
+### - Cheap and nasty
 
 IP=$1
 PORT=$2
