@@ -13,6 +13,7 @@ if ! $(ping -c $IP); then
     exit 1
 fi
 
+## Insert a traceroute test here
 
 if $(nc -z $IP $PORT); then
     echo -e "SUCCESS - Connection to IP $IP PORT $PORT"
