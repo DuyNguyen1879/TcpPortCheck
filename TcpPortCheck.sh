@@ -14,6 +14,12 @@ if ! $(ping -c $IP); then
 fi
 
 ## Insert a traceroute test here
+echo -e "/nPerforming traceroute to $IP"
+traceroute $IP
+
+echo -e "/n/n"
+
+echo -e "Performing TCP Port Check using nc -z $IP $PORT"
 
 if $(nc -z $IP $PORT); then
     echo -e "SUCCESS - Connection to IP $IP PORT $PORT"
